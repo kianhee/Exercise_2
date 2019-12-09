@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
             val imageBMI : ImageView = findViewById(R.id.imageViewProfile)
             if(bmi<18.5)
             {
-                imageBMI.setBackgroundResource(R.drawable.under)
+                imageBMI.setImageResource(R.drawable.under)
             }else if(bmi in 18.5..24.9){
-                imageBMI.setBackgroundResource(R.drawable.normal)
+                imageBMI.setImageResource(R.drawable.normal)
             }
             else if(bmi>25){
-                imageBMI.setBackgroundResource(R.drawable.over)
+                imageBMI.setImageResource(R.drawable.over)
             }
         }
     }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         heightInCm.text.clear()
         bmiText.text = getString(R.string.bmi)
         val imageBMI : ImageView = findViewById(R.id.imageViewProfile)
-        imageBMI.setBackgroundResource(R.drawable.empty)
+        imageBMI.setImageResource(R.drawable.empty)
         //weightInKg.hint = getString(R.string.weight)
         //heightInCm.hint = getString(R.string.height)
     }
